@@ -21,12 +21,12 @@ function splitSentence(string) {
     return (string.split(' '));
   }
 
- 
-
-
 // Desafio 4
-function concatName() {
+function concatName(arrStrings) {
   // seu código aqui
+  for (let i = 0; i <= arrStrings.length; i ++){
+    return arrStrings[arrStrings.length - 1] + ', ' + arrStrings[0];
+  }
 }
 
 // Desafio 5
