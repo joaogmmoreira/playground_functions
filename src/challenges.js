@@ -56,9 +56,6 @@ function highestCount(arr) {
   return count;
 }
 
-highestCount ([-2, -2, -1]);
-
-
 // Desafio 7 COMPLETO!
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
@@ -86,7 +83,7 @@ function fizzBuzz(arr) {
       retorno.push('buzz');      
 
     }else if (arr[index] % 3 === 0 && arr[index] % 5 === 0){
-      retorno.push('fizzbuzz');
+      retorno.push('fizzBuzz');
 
     }else {
       retorno.push('bug!');
@@ -94,6 +91,8 @@ function fizzBuzz(arr) {
   }
   return retorno;
 }
+
+fizzBuzz ([2, 15, 7, 9, 45]);
 
 // Desafio 9 COMPLETO!
 function encode(encoded) {
