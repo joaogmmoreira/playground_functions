@@ -39,7 +39,7 @@ function footballPoints(wins, ties) {
 function highestCount(arr) {
   // seu código aqui
   let largest = [-100];
-  let count  = 0;
+  let count = 0;
     
   for (let i = 0; i <= arr.length; i ++){
     if (arr[i] > largest){
@@ -70,7 +70,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
-// Desafio 8 INCOMPLETO
+// Desafio 8 COMPLETO!
 function fizzBuzz(arr) {
   // seu código aqui
   retorno = [];
