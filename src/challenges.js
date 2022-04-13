@@ -11,15 +11,15 @@ function compareTrue(valueA, valueB) {
 // Desafio 2 COMPLETO!
 function calcArea(base, height) {
   // seu código aqui
-  return (base * height)/2
+  return (base * height)/2;
 }
 
 // Desafio 3 COMPLETO!
 function splitSentence(string) {
   // seu código aqui
- 
-    return (string.split(' '));
-  }
+
+  return (string.split(' '));
+}
 
 // Desafio 4 COMPLETO!
 function concatName(arrStrings) {
@@ -35,27 +35,31 @@ function footballPoints(wins, ties) {
   return wins*3 + ties;
 }
 
-// Desafio 6 INCOMPLETO
+// Desafio 6 COMPLETO!
 function highestCount(arr) {
   // seu código aqui
-  let largest = [0];
+  let largest = [-100];
   let count  = 0;
     
   for (let i = 0; i <= arr.length; i ++){
     if (arr[i] > largest){
         largest = arr[i];
+        //console.log(largest);
+        //console.log(arr);
     }
   }
   for (let j = 0; j <= arr.length; j ++){
-    if (arr[j] = largest){
+    if (largest == arr[j]){
       count ++;
     }
   }
   return count;
 }
 
+highestCount ([-2, -2, -1]);
 
-// Desafio 7
+
+// Desafio 7 COMPLETO!
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   if (Math.abs(cat1 - mouse)> Math.abs(cat2 - mouse)){
@@ -91,10 +95,10 @@ function fizzBuzz(arr) {
   return retorno;
 }
 
-// Desafio 9
+// Desafio 9 COMPLETO!
 function encode(encoded) {
   // seu código aqui
-word = encoded.split('');
+let word = encoded.split('');
 
 
   for (let i = 0; i <= word.length; i ++){
@@ -123,7 +127,7 @@ word = encoded.split('');
 
 function decode(decoded) {
   // seu código aqui
-  word3 = decoded.split('');
+  let word3 = decoded.split('');
 
   for (let j = 0; j <= word3.length; j++){
     if (word3[j] === '1'){
