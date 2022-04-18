@@ -153,26 +153,30 @@ function decode(decoded) {
 // Desafio 10 INCOMPLETO!
 function techList(arr, name) {
   // seu código aqui
-  let obj = [{}];
-  for (let i = 0; i < arr.length; i ++){
-    if (arr.length >= 1){
-      obj.tech = arr[i];
-      obj.name = name;
-      console.log(obj);
-      return obj;
-      
-      
-    }else {
-      console.log('vazio');
-      return 'Vazio!';
-      
-    }
+  let order = arr.sort();
+  let array = [];
+  console.log(order);
+  for (let i = 0; i < order.length; i ++){    
+
+    array.push({tech:order[i], name:name})
+    /*.tech = arr[i];
+    obj.name = name;
+    //console.log(obj);
+    return obj;*/
   }
+  if (order.length >= 1){
+    return array;
+  
+  } else {
+    return 'Vazio!'
+  }
+
+  
   //console.log(obj);
   
 }
 
-techList ([], 'Lucas');
+techList (["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas");
 
 module.exports = {
   calcArea,
