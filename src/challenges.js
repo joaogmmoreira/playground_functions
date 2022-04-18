@@ -154,14 +154,14 @@ function decode(decoded) {
 function techList(arr, name) {
   // seu código aqui
   let obj = [{}];
-  for (let i = 0; i <= arr.length; i ++){
+  for (let i = 0; i < arr.length; i ++){
     if (arr.length > 0){
       obj.tech = arr[i];
       obj.name = name;
       return obj;
 
     }else {
-      obj = 'Vazio!'
+      obj = ['Vazio!'];
       return obj;
     }
   }
