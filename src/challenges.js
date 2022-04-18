@@ -155,17 +155,24 @@ function techList(arr, name) {
   // seu código aqui
   let obj = [{}];
   for (let i = 0; i < arr.length; i ++){
-    if (arr.length > 0){
+    if (arr.length >= 1){
       obj.tech = arr[i];
       obj.name = name;
+      console.log(obj);
       return obj;
-
+      
+      
     }else {
-      obj = ['Vazio!'];
-      return obj;
+      console.log('vazio');
+      return 'Vazio!';
+      
     }
   }
+  //console.log(obj);
+  
 }
+
+techList ([], 'Lucas');
 
 module.exports = {
   calcArea,

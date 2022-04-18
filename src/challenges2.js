@@ -43,12 +43,6 @@ function hydrate(str) {
 }
 
 
-
-
-
-
-
-
   /*newArr = str.split(' ');
   console.log(newArr);
   for (let i = 0; i < newArr.length; i ++) {
