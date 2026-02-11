@@ -48,13 +48,13 @@ let numberArray = [1, 2, 3, 4, 5];
 // console.log(person.age);
 // console.log(person.isStudent);
 
-console.log(numberArray);
-console.log(numberArray[0]);
+// console.log(numberArray);
+// console.log(numberArray[0]);
 
-console.log(numberArray.length);
+// console.log(numberArray.length);
 
-console.log(numberArray.length - 1);
-console.log(numberArray[numberArray.length - 1]);
+// console.log(numberArray.length - 1);
+// console.log(numberArray[numberArray.length - 1]);
 
 let objectArray = [
   { name: 'Ana', age: 22 }, // índice 0
@@ -62,18 +62,20 @@ let objectArray = [
   { name: 'Carla', age: 30 }, // índice 2
 ];
 
-console.log(objectArray[0].name);
-console.log(objectArray[1].name);
-console.log(objectArray[2].name);
+// console.log(objectArray[0].name);
+// console.log(objectArray[1].name);
+// console.log(objectArray[2].name);
 // console.log(objectArray[3].name);
 
 // Iterar sobre o array de objetos
 
 // eslint-disable-next-line operator-assignment
-// for (let i = 0; i < objectArray.length; i = i + 1) {
-//   console.log('Valor de i:', i);
-//   console.log(objectArray[i].name);
-// }
+for (let i = 0; i < objectArray.length; i = i + 1) {
+  console.log('Valor de i:', i);
+  console.log(objectArray[i].name);
+  console.log(objectArray[i].age);
+  console.log(`o aluno ${objectArray[i].name} tem ${objectArray[i].age} anos`);
+}
 
 // Printe na tela todos os nomes e status dos objetos dentro do array
 // LOOP FOR JS
@@ -104,3 +106,15 @@ let student = [
     status: true,
   },
 ];
+
+for (let i = 0; i < student.length; i += 1) {
+  if (student[i].status === true) {
+    console.log(
+      `O aluno ${student[i].name}, com ${student[i].age} anos, se formou`,
+    );
+  } else {
+    console.log(
+      `O aluno ${student[i].name}, com ${student[i].age} anos, não se formou`,
+    );
+  }
+}
